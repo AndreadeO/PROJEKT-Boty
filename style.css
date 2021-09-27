@@ -21,3 +21,84 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+body {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #f5f5f5;
+    
+
+    
+
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+.bila_polovina,
+.zelena_polovina {
+    border-radius: 10px;
+    width: 335px;
+    height: 440px;
+    box-shadow: 4px 3px 6px 0px #e3e3e3;
+    padding: 30px;
+
+}
+
+.bila_polovina {
+    color: #000000;
+    border: 1px solid #f5f5f5;
+    background-color: #ffffff;
+    
+    
+    
+}
+
+.zelena_polovina {
+    border: 1px solid #06d7c1;
+    background-image: linear-gradient(#06d7c1,#50cc49);
+    color: #ffffff;
+    position: relative;
+
+}
+
+.zelena_polovina p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+    position: absolute;
+    right: 10%;
+    bottom: 11%;
+}
+
+.zaruka {
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    right: 10%;
+    bottom: 7%;
+
+}
+
+.druh_boty {
+    color: #959595;
+    margin-top: 5px;
+}
+
+.popis_boty {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
