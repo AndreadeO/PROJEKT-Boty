@@ -23,15 +23,19 @@ body {
 /* ----- zde zacni psat vlastni css ----- */
 
 body {
-    display: flex;
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
     font-weight: 400;
     background-color: #f5f5f5;
+    padding: 100px;
     
+}
 
+.kontejner {
+    display: flex;
+    width: 670px;
     
-
+    
 }
 
 h1 {
@@ -42,27 +46,38 @@ h1 {
     margin: 0;
 
 }
+
+h2 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 30px;
+    
+}
+
 .bila_polovina,
 .zelena_polovina {
-    border-radius: 10px;
-    width: 335px;
+    
     height: 440px;
     box-shadow: 4px 3px 6px 0px #e3e3e3;
     padding: 30px;
+    flex-basis: 335px;
+    flex-shrink: 0;
+    border-radius: 10px;
+  
 
 }
 
 .bila_polovina {
     color: #000000;
-    border: 1px solid #f5f5f5;
     background-color: #ffffff;
+    position: relative;
+    
     
     
     
 }
 
 .zelena_polovina {
-    border: 1px solid #06d7c1;
     background-image: linear-gradient(#06d7c1,#50cc49);
     color: #ffffff;
     position: relative;
@@ -100,5 +115,63 @@ h1 {
 
 .popis_boty {
     margin-top: 25px;
-    margin-bottom: 25px;
+    border-bottom: 1px solid #06d7c1;
+    padding-bottom: 35px;
+
 }
+
+
+.bota_foto {
+    position: absolute;
+    right: 1px;
+    bottom: 3px;
+}
+
+.zelena_polovina p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.velikosti {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.velikosti li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    
+}
+ 
+ .do_kosiku {
+   text-transform: uppercase;
+   border: 1px solid #f15f42;
+   background-color: #f15f42;
+   color: #ffffff;
+   text-decoration: none;
+   padding: 10px 30px;
+   border-radius: 5px;
+   font-weight: 400;
+   position: absolute;
+   left: 30px;
+   bottom: 30px;
+
+    
+}   
+
+
+li:hover {
+    border: 1px solid #f15f42;
+    border-radius: 50%;
+    color: #f15f42;
+    font-weight: 500;
+    padding: 3px;
+
+}
+
+    
+
+/*horizontal line ta cara border color*
+i divem to jde udelat jako blokovy element/
